@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="bower/vue/dist/vue.min.js"></script>
+<link rel="stylesheet" href="css/style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="krypto">
+
+		<header>
+			<div id="target">Target: <input type="text" v-model="targetCard"></div>
+		</header>
+
+		<div id="cards">
+
+			<div id="card1" class="card">{{card1}}</div>
+			<div id="card2" class="card">{{card2}}</div>
+			<div id="card3" class="card">{{card3}}</div>
+			<div id="card4" class="card">{{card4}}</div>
+			<div id="card5" class="card">{{card5}}</div>
+
+		</div>
+
+		<footer>
+			
+
+			<div id="result">{{results}}</div>
+
+
+		</footer>
+
+
+
+
+
+		<div><pre> {{$data | json}} </pre></div>
+	</div>
+	<script src="js/app.js"></script>
+</body>
+</html>

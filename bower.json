@@ -1,0 +1,16 @@
+{
+  "name": "krypto",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dwoodard/krypto",
+  "authors": [
+    "Dustin Woodard <dustin.woodard@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,64 @@
+
+html,body{
+	height: 100%
+
+}
+body{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4fce10+0,257709+100 */
+background: #4fce10; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #4fce10 0%, #257709 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4fce10), color-stop(100%,#257709)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #4fce10 0%,#257709 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #4fce10 0%,#257709 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #4fce10 0%,#257709 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #4fce10 0%,#257709 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fce10', endColorstr='#257709',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#cards{
+	
+}
+
+.card{
+	display: block;
+width: 100px;
+height: 150px;
+text-align: center;
+vertical-align: middle;
+line-height: 150px;
+font-size: 30px;
+float: left;
+
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9fcf7+0,fff7f7+100 */
+background: #f9fcf7; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #f9fcf7 0%, #fff7f7 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f9fcf7), color-stop(100%,#fff7f7)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #f9fcf7 0%,#fff7f7 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #f9fcf7 0%,#fff7f7 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #f9fcf7 0%,#fff7f7 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #f9fcf7 0%,#fff7f7 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf7', endColorstr='#fff7f7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#diamond {
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-bottom-color: red;
+	position: relative;
+	top: -50px;
+}
+#diamond:after {
+	content: '';
+	position: absolute;
+	left: -50px;
+	top: 50px;
+	width: 0;
+	height: 0;
+	border: 50px solid transparent;
+	border-top-color: red;
+}
