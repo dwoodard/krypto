@@ -10,32 +10,31 @@
 	<div id="krypto">
 
 		<header>
-			<div id="target">Target: <input type="text" v-model="targetCard"></div>
+			<div>Target: <span id="target"></span>
+			<input type="text" v-model="targetCard">
+			</div> 
 		</header>
 
 		<div id="cards">
 
-			<div id="card1" class="card">{{card1}}</div>
-			<div id="card2" class="card">{{card2}}</div>
-			<div id="card3" class="card">{{card3}}</div>
-			<div id="card4" class="card">{{card4}}</div>
-			<div id="card5" class="card">{{card5}}</div>
-
+			<div id="card1" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card1}}</div>
+			<div id="card2" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card2}}</div>
+			<div id="card3" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card3}}</div>
+			<div id="card4" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card4}}</div>
+			<div id="card5" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card5}}</div>
 		</div>
 
 		<footer>
-			
-
-			<div id="result">{{results}}</div>
-
-
+			<div id="result">results: {{results}}</div>
+			<div>solve</div>
 		</footer>
 
 
-
+		<div v-my-directive="someValue"></div>
 
 
 		<div><pre> {{$data | json}} </pre></div>
+		<div><pre> {{$computed | json}} </pre></div>
 	</div>
 	<script src="js/app.js"></script>
 </body>

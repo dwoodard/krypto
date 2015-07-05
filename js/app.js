@@ -12,18 +12,35 @@ var app = new Vue({
 		sign4: "",
 		card5:0
 	},
-	compiled:{
-		results: function() {
-			return 'test';
+	computed:{
+		results: {
+			get: function() {
+				return 
+				this.card1 + " " + this.card2 + " " + this.card3 + " " + this.card4 + " " + this.card5 ;
+			}
+		}
+	},
+	methods: {
+		solve: function () {
+			this
 		}
 	}
-	// filters:{},
-	// methods:{
-
 	
 })
 
 
-var Card = Vue.extend({
-  template: '<p>A custom component!</p>'
+Vue.directive('my-directive', {
+  bind: function () {
+    // do preparation work
+    // e.g. add event listeners or expensive stuff
+    // that needs to be run only once
+  },
+  update: function (newValue, oldValue) {
+    // do something based on the updated value
+    // this will also be called for the initial value
+  },
+  unbind: function () {
+    // do clean up work
+    // e.g. remove event listeners added in bind()
+  }
 })
