@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="bower/vue/dist/vue.min.js"></script>
+
+
 <link rel="stylesheet" href="css/style.css">
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -10,32 +11,44 @@
 	<div id="krypto">
 
 		<header>
-			<div>Target: <span id="target"></span>
+			<div><span id="target">Target: </span>
 			<input type="text" v-model="targetCard">
-			</div> 
+			</div>
 		</header>
 
 		<div id="cards">
+			<div id="card1" class="card">{{card1}}</div>
+			<div id="sign1" class="sign">{{sign1}}</div>
 
-			<div id="card1" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card1}}</div>
-			<div id="card2" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card2}}</div>
-			<div id="card3" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card3}}</div>
-			<div id="card4" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card4}}</div>
-			<div id="card5" class="card" draggable="true" v-on="dragstart:dragstart, dragend:dragend, dragover:dragover, dragenter:dragenter">{{card5}}</div>
+			<div id="card2" class="card">{{card2}}</div>
+			<div id="sign2" class="sign">{{sign2}}</div>
+
+			<div id="card3" class="card">{{card3}}</div>
+			<div id="sign3" class="sign">{{sign3}}</div>
+
+			<div id="card4" class="card">{{card4}}</div>
+			<div id="sign4" class="sign">{{sign4}}</div>
+
+			<div id="card5" class="card">{{card5}}</div>
 		</div>
 
 		<footer>
-			<div id="result">results: {{results}}</div>
-			<div>solve</div>
+			<div id="result">results: {{results}} = {{total}} </div>
+
 		</footer>
 
 
-		<div v-my-directive="someValue"></div>
+		<div v-demo>test</div>
+		<demo>test</demo>
 
 
 		<div><pre> {{$data | json}} </pre></div>
 		<div><pre> {{$computed | json}} </pre></div>
 	</div>
+
+	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="bower/vue/dist/vue.min.js"></script>
 	<script src="js/app.js"></script>
+
 </body>
 </html>
